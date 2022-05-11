@@ -1,0 +1,114 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 150vh;
+    position: relative;
+    
+}
+.header-container{
+    width: 1200px;
+    position: absolute;
+    /*in relation to parent size*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar {
+    width: 100%;
+    overflow: auto;
+    justify-content: space-between;
+   }
+   /* Navbar links */
+   .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+   }
+   /* Navbar links on mouse-over */
+   .navbar a:hover {
+    background-color: white;
+   }
+   /* Current/active navbar link */
+   .active {
+    background-color: grey;
+   }
+   /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+   @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+     }
+   }
+   body{
+  
+    text-align: center;
+    background-color: black;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 98px;
+    margin-bottom: 32px;
+}
+p{
+    font-size: 30px;
+    
+    margin-bottom: 48px;
+    color: white;
+}
+html{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+h2{
+    font-size: 44px;
+    margin-bottom: 48px;
+    color: white;
+
+}
+section{
+    padding: 96px 0;
+
+}
+.hero-image{
+    background-image:url("https://cdn.sanity.io/images/c1chvb1i/production/d0a403245ca502a07bf1c6a35787df46ce54a405-1100x735.jpg/mamba-day-kobe-bryant-black-and-white-spotlight.jpg");
+    height: 100vh;
+    position: relative;
+
+    background-attachment: fixed;
+    background-position: center;
+    
+
+}
+.social-icon{
+    color: gray;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+.social-icon:hover{
+    color: darkgrey;
+}
+.footer{
+        color: white;
+        width: 100%;
+        text-align: center;
+       
+      bottom:0;
+      font-size: 20px;
+        
+}
+img{
+    height: 1500px;
+    width: 1200px;
+}
